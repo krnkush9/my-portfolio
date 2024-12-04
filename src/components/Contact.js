@@ -6,11 +6,11 @@ function Contact() {
 
     useEffect(() => {
         AOS.init({
-          disable: "phone",
-          duration: 700,
-          easing: "ease-out-cubic",
+            disable: "phone",
+            duration: 700,
+            easing: "ease-out-cubic",
         });
-      }, []);
+    }, []);
 
     const [formData, setFormData] = useState({
         Name: "",
@@ -27,19 +27,20 @@ function Contact() {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        console.log("form data>>",formData);
+        console.log("form data>>", formData);
     }
 
     return (
-        <div data-aos="zoom-out-down" className="w-full">
-            <h2 className="text-[3rem] font-bold mb-7 text-center">Contact</h2>
+        <div data-aos="zoom-out-down" className="w-full bg-blue-300 rounded-3xl pb-3">
+            <h2 className="text-[3rem] font-bold mb-7 text-center">Contact Us</h2>
             <form onSubmit={submitHandler}
-            className="my-3 sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto border-2 shadow-lg
-             py-4 px-5 flex flex-col gap-y-3 rounded-lg">
+                className="my-3 sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto border-2 shadow-lg
+             py-4 px-5 flex flex-col gap-y-3 rounded-lg bg-blue-200">
                 {/* name */}
                 <label className="flex flex-col gap-y-1">
                     <p className="">Name</p>
                     <input
+                        required
                         type="text"
                         placeholder="Enter you name"
                         name="Name"
@@ -50,15 +51,16 @@ function Contact() {
                 </label>
 
                 {/* email */}
-                <label  className="flex flex-col gap-y-1">
+                <label className="flex flex-col gap-y-1">
                     <p>Email</p>
                     <input
+                        required
                         type="email"
                         placeholder="Enter your email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                         className="h-9 rounded-md px-2 border-2"
+                        className="h-9 rounded-md px-2 border-2"
                     />
                 </label>
 
@@ -66,7 +68,7 @@ function Contact() {
                 <label className="flex flex-col gap-y-1">
                     <p>Message</p>
                     <textarea
-                        placeholder="Enter you message"
+                        placeholder="Enter your message"
                         name="message"
                         rows="5"
                         cols="50"

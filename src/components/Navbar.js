@@ -4,7 +4,7 @@ import HamburgerIcon from "../assets/more.png"
 function Navbar() {
     const menuList = [
 
-        { title: "Home", path: "/" },
+        { title: "Home", path: "/my-portfolio" },
         { title: "Project", path: "/project" },
         { title: "Resume", path: "#" },
         { title: "About", path: "/about" },
@@ -20,7 +20,7 @@ function Navbar() {
             <div className="px-4 py-2 w-fit hidden sm:block bg-[#0A192F] text-[#00FFFF]
             rounded-full font-semibold select-none border-2
             border-[#00FFFF] shadow-lg">
-                <Link to='/'>
+                <Link to='/my-portfolio'>
                     Portfolio
                 </Link>
 

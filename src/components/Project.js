@@ -4,7 +4,6 @@ import ProjectImage2 from "../assets/Edtech Project.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Navbar from "./Navbar";
 
 function Project() {
 
@@ -17,7 +16,7 @@ function Project() {
       }, []);
 
     return (
-        <div className="w-full md:px-8 lg:px-8">
+        <div className="w-full md:px-8 lg:px-8 bg-blue-300 rounded-3xl">
             {/* project 1 */}
             <h2 data-aos="flip-left" className="text-[3rem] font-bold text-center mt-7 pb-5
             "> Projects</h2>

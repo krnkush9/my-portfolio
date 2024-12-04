@@ -10,23 +10,24 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div className=" w-full h-full text-[#333333] pb-5">
+    <div className=" w-full h-full text-[#645f5f] pb-5 bg-blue-100">
 
+      {/* #L@gnKt620 */}
       <div className="w-11/12 mx-auto">
         {/* navbar */}
         <Navbar />
 
         <Routes>
-          <Route path='/' element={<Home />} />
+          {/* <Route path='/' element={<Home />} /> */}
+          <Route path='/my-portfolio' element={<Home />} />
           <Route path='/project' element={<Project />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
-        
-        {/* footer */}
-        <Footer />
       </div>
 
+      {/* footer */}
+      <Footer />
     </div>
   );
 }

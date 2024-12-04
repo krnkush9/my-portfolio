@@ -9,3 +9,11 @@
     align-items: center;
     cursor: pointer;
 }
+
+.icon:hover {
+    width: 3rem;
+    height: 3rem;
+    transition: all;
+    transition-duration: 250ms;
+    background-color: #7b6dd4;
+}

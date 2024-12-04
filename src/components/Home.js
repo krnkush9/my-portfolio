@@ -8,7 +8,9 @@ function Home() {
         <div className="w-11/12 mx-auto">
             <User />
             <Project />
+            <div className="h-11"></div>
             <About />
+            <div className="h-5"></div>
             <Contact />
         </div>
     )
